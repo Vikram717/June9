@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.june9">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,23 +11,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".searcher">
+        <activity android:name=".prgr">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".spn">
+        <activity android:name=".alrt">
 
         </activity>
-        <activity android:name=".shpref">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".rcview"></activity>
+        <activity android:name=".alarmsimple" />
+        <activity android:name=".Timepicker" />
+        <activity android:name=".dtpick" />
+        <activity android:name=".colors" />
+        <activity android:name=".webView" />
+        <activity android:name=".whatsapp" />
+        <activity android:name=".searcher" />
+        <activity android:name=".spn" />
+        <activity android:name=".shpref" />
         <activity android:name=".Splash" />
         <activity android:name=".pop" />
         <activity android:name=".cnt" />
@@ -36,6 +41,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".registration" />
         <activity android:name=".LIstViEw" />
+
+        <receiver android:name=".brdcst" />
     </application>
 
 </manifest>

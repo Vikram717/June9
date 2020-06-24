@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="50dp"
+    android:paddingLeft="50dp"
+    android:background="@mipmap/hh"
+    android:paddingTop="50dp"
+    tools:context=".whatsapp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="96dp"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/download" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:text="WhatsApp"
+        android:textSize="30dp"
+        android:textColor="#FFFF"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_round"
+        android:paddingLeft="10dp"
+        android:hint="Phone Number"
+        android:maxLength="11"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_below="@+id/etMobileNumber"
+        android:background="@drawable/edit_round"
+        android:hint="Type a message"
+        android:gravity="top|left"
+        android:scrollbars="none"
+        android:inputType="textMultiLine|textCapSentences"/>
+
+    <ImageButton
+        android:id="@+id/send"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="2dp"
+        android:paddingRight="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etMessage"
+        android:background="@drawable/btn_round"
+        android:src="@mipmap/wnload"/>
+
+
+</RelativeLayout>

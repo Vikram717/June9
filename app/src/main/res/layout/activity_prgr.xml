@@ -4,7 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/ha"
-    tools:context=".Splash">
+    tools:context=".prgr">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb"
+        android:text="Click Me"
+        android:onClick="clk"
+        />
 </RelativeLayout>
